@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Optimisation - Mohamed</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <!-- Barre de navigation -->
+    <nav class="barre-navigation">
+      <div class="conteneur-barre-navigation">
+        <ul class="liens-navigation">
+          <li><a href="index.html">Accueil</a></li>
+        </ul>
+        <ul class="icones-sociales">
+          <li>
+            <a href="https://discord.gg/WbPj5Nn6P5">
+              <img src="image/discord.svg" alt="Discord" />
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/izuki_kazu?s=21">
+              <img src="image/x.svg" alt="X" />
+            </a>
+          </li>
+          <li>
+            <a href="mailto:mohamed.elmokhtari@gmail.com">
+              <img src="image/mail.svg" alt="Mail" aria-label="Mail" />
+            </a>
+          </li>
+        </ul>
+        <button class="menu-hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Section Introduction -->
+    <section class="introduction">
+      <div class="texte">
+        <h1>Optimisation</h1>
+      </div>
+    </section>
+
+    <div class="separateur"></div>
+
+    <!-- Section Services -->
+    <section id="services" class="contenu-optimisation">
+      <div class="boite-optimisation">
+        <h3>STANDARD</h3>
+        <ul>
+          <li>Paramètrage standard de Windows</li>
+          <li>Nettoyage Bloat Windows</li>
+          <li>Option d'alimentation améliorer</li>
+          <li>Réglages avancés du panneau de configuration Nvidia/AMD</li>
+          <li>De-bloating Driver Nvidia/AMD</li>
+          <li>Optimisation GPU</li>
+          <li>Optimisation RAM (bios) - Réglages MSI</li>
+        </ul>
+        <button
+          class="bouton-optimisation"
+          id="commande-standard"
+          data-service="STANDARD"
+          data-price="50"
+        >
+          Commander
+        </button>
+      </div>
+      <div class="boite-optimisation">
+        <h3>Optimisation des systèmes</h3>
+        <ul>
+          <li>Pack Standard</li>
+          <li>Désactivation économie d'énergie - Drivers et Matériel</li>
+          <li>Optimisation Windows avancée</li>
+          <li>Overclocking CPU</li>
+          <li>Configuration du BIOS</li>
+          <li>Fix Clock de votre GPU</li>
+          <li>Configuration Regedit personnalisé</li>
+        </ul>
+        <button
+          class="bouton-optimisation"
+          id="commande-premium"
+          data-service="Optimisation des systèmes"
+          data-price="100"
+        >
+          Commander
+        </button>
+      </div>
+    </section>
+
+    <!-- Pied de page -->
+    <div class="separateur-fin"></div>
+    <footer class="pied-de-page">
+      <div class="conteneur-pied-de-page">
+        <p>&copy; Codé avec <3 par Izuki. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>

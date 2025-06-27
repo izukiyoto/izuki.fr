@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panier</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Barre de navigation -->
+    <nav class="barre-navigation">
+      <div class="conteneur-barre-navigation">
+        <ul class="liens-navigation">
+          <li><a href="index.html">Accueil</a></li>
+        </ul>
+        <ul class="icones-sociales">
+          <li>
+            <a href="https://discord.gg/WbPj5Nn6P5">
+              <img src="image/discord.svg" alt="Discord" />
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/izuki_kazu?s=21">
+              <img src="image/x.svg" alt="X" />
+            </a>
+          </li>
+          <li>
+            <a href="mailto:votre.email@example.com">
+              <img src="image/mail.svg" alt="Mail" aria-label="Mail" />
+            </a>
+          </li>
+        </ul>
+        <button class="menu-hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Section Introduction -->
+    <section class="introduction text-center my-5">
+      <div class="container">
+        <h1>Votre Panier</h1>
+      </div>
+    </section>
+
+    <div class="separateur"></div>
+
+    <!-- Section Panier -->
+    <section id="panier" class="container my-5">
+      <div class="contenu-panier">
+        <div class="panier-gauche">
+          <div id="elements-panier" class="card p-3">
+            <!-- Les éléments du panier seront affichés ici -->
+          </div>
+        </div>
+        <div class="panier-droite">
+          <div id="options-paiement" class="card p-3 mb-3">
+            <h2>Options de paiement</h2>
+            <div class="conteneur-boutons-paiement">
+              <a
+                href="https://www.apple.com/apple-pay/"
+                id="apple-pay"
+                class="bouton-paiement"
+              >
+                <img src="image/apple.svg" alt="Apple Pay" />
+                Payer avec Apple Pay
+              </a>
+              <a
+                href="https://www.paypal.com/signin"
+                id="paypal"
+                class="bouton-paiement"
+              >
+                <img src="image/paypal.svg" alt="PayPal" />
+                Payer avec PayPal
+              </a>
+              <button id="carte-bancaire" class="bouton-paiement">
+                <img src="image/carte.svg" alt="Carte Bancaire" />
+                Payer avec Carte Bancaire
+              </button>
+            </div>
+          </div>
+          <div id="info-contact" class="card p-3">
+            <h2>Coordonnées</h2>
+            <form>
+              <div class="groupe-formulaire">
+                <label for="nom">Nom:</label>
+                <input
+                  type="text"
+                  id="nom"
+                  name="nom"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="groupe-formulaire">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="groupe-formulaire">
+                <label for="adresse">Adresse:</label>
+                <input
+                  type="text"
+                  id="adresse"
+                  name="adresse"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                Valider
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fenêtre modale pour le paiement par carte bancaire -->
+    <div id="modale" class="modale">
+      <div class="contenu-modale">
+        <span class="fermer">&times;</span>
+        <h2>Coordonnées de la Carte Bancaire</h2>
+        <form id="formulaire-carte">
+          <div class="groupe-formulaire">
+            <label for="numero-carte">Numéro de Carte:</label>
+            <input
+              type="text"
+              id="numero-carte"
+              name="numero-carte"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="groupe-formulaire">
+            <label for="date-expiration">Date d'Expiration:</label>
+            <input
+              type="text"
+              id="date-expiration"
+              name="date-expiration"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="groupe-formulaire">
+            <label for="cvv">CVV:</label>
+            <input
+              type="text"
+              id="cvv"
+              name="cvv"
+              class="form-control"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Valider
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="separateur-fin"></div>
+
+    <!-- Pied de page -->
+    <footer class="pied-de-page bg-dark text-white text-center py-3">
+      <div class="container">
+        <p>&copy; Codé avec <3 par Izuki. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire de Configuration sur Mesure</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <!-- Barre de navigation -->
+    <nav class="barre-navigation">
+      <div class="conteneur-barre-navigation">
+        <ul class="liens-navigation">
+          <li><a href="index.html">Accueil</a></li>
+        </ul>
+        <ul class="icones-sociales">
+          <li>
+            <a href="https://discord.gg/WbPj5Nn6P5">
+              <img src="image/discord.svg" alt="Discord" />
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/izuki_kazu?s=21">
+              <img src="image/x.svg" alt="X" />
+            </a>
+          </li>
+          <li>
+            <a href="mailto:mohamed.elmokhtari@gmail.com">
+              <img src="image/mail.svg" alt="Mail" aria-label="Mail" />
+            </a>
+          </li>
+        </ul>
+        <button class="menu-hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Section Introduction -->
+    <section class="introduction">
+      <div class="texte">
+        <h1>Configuration sur Mesure</h1>
+      </div>
+    </section>
+
+    <div class="separateur"></div>
+
+    <!-- Section Formulaire -->
+    <section class="section-formulaire">
+      <div class="conteneur-formulaire">
+        <h2>Demande de Configuration sur Mesure</h2>
+        <form action="submit_form.php" method="post">
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="usage">Utilisation :</label>
+          <input type="text" id="usage" name="usage" required />
+
+          <label for="aesthetic">Esthétique :</label>
+          <input type="text" id="aesthetic" name="aesthetic" required />
+
+          <label for="budget">Budget :</label>
+          <input type="number" id="budget" name="budget" required />
+
+          <label for="config-details">Détails de la Configuration :</label>
+          <textarea
+            id="config-details"
+            name="config-details"
+            rows="5"
+            required
+          ></textarea>
+
+          <button type="submit" class="bouton-service">Envoyer</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Pied de page -->
+    <div class="separateur-fin"></div>
+    <footer class="pied-de-page">
+      <div class="conteneur-pied-de-page">
+        <p>&copy; Codé avec <3 par Izuki. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>

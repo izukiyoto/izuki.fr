@@ -1,0 +1,607 @@
+/* Réinitialisation des styles de base */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #141414; /* Couleur de fond */
+  color: #bebebe; /* Couleur du texte */
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Barre de navigation et Pied de page */
+.barre-navigation,
+.pied-de-page {
+  background-color: #141414;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.conteneur-barre-navigation,
+.conteneur-pied-de-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.conteneur-pied-de-page {
+  justify-content: center; /* Centrer le contenu horizontalement */
+}
+
+.liens-navigation,
+.icones-sociales {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+}
+
+.liens-navigation li a,
+.lien-texte a,
+.bouton-paiement {
+  color: #ffffff;
+  text-decoration: none; /* Supprime le surlignage */
+  transition: color 0.3s ease;
+}
+
+.liens-navigation li a:hover,
+.lien-texte a:hover,
+.bouton-paiement:hover {
+  color: #0071e3;
+}
+
+.icones-sociales img {
+  width: 25px;
+  height: auto;
+  transition: transform 0.3s ease;
+  filter: invert(1);
+}
+
+.icones-sociales img:hover {
+  transform: scale(1.1);
+  filter: invert(0.8);
+}
+
+/* Menu Hamburger */
+.menu-hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+}
+
+/* Section Introduction */
+.introduction,
+.introduction-fin {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 0;
+  padding-left: 100px;
+  padding-right: 100px;
+  flex-wrap: wrap;
+}
+
+.introduction-fin {
+  padding-bottom: 500px;
+}
+
+.texte {
+  max-width: 500px;
+  flex: 1;
+  margin-right: 20px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.separateur,
+.separateur-fin {
+  width: 84%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 20px auto;
+}
+
+.separateur-fin {
+  margin-top: 70px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 0;
+}
+
+.texte ul {
+  list-style: none;
+  padding: 0;
+}
+
+.texte ul li {
+  margin-bottom: 25px;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+}
+
+/* Alignement du texte et de l'illustration */
+.contenu-texte {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+  position: relative;
+}
+
+.paragraphe-texte {
+  flex: 1;
+  max-width: 600px;
+}
+
+.paragraphe-texte p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.paragraphe-texte ul {
+  margin-top: 20px;
+}
+
+.paragraphe-texte ul li {
+  margin-bottom: 15px;
+}
+
+.image img {
+  width: 250px;
+  height: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Section Services */
+.contenu,
+.contenu-optimisation {
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding-left: 40px;
+  padding-right: 80px;
+}
+
+.boite-service,
+.boite-optimisation {
+  background-color: #252525;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+  width: 100%;
+  max-width: 300px;
+}
+
+.boite-service:hover,
+.boite-optimisation:hover {
+  transform: translateY(-5px);
+}
+
+.image-service {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.bouton-service,
+.bouton-optimisation {
+  background-color: #0071e3;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.bouton-service:hover,
+.bouton-optimisation:hover {
+  background-color: #005bb5;
+  transform: scale(1.05);
+}
+
+.boite-optimisation {
+  background-color: #1e1e1e;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  max-width: 350px;
+}
+
+.boite-optimisation h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #0071e3;
+}
+
+.boite-optimisation ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+.boite-optimisation ul li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 30px;
+}
+
+.boite-optimisation ul li::before {
+  content: "✔";
+  color: #0071e3;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Styles pour la section formulaire */
+.section-formulaire {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.conteneur-formulaire {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.conteneur-formulaire h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #0071e3;
+}
+
+.conteneur-formulaire label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.conteneur-formulaire input,
+.conteneur-formulaire textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #252525;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.conteneur-formulaire button {
+  background-color: #0071e3;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.conteneur-formulaire button:hover {
+  background-color: #005bb5;
+}
+
+.contenu-panier {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px; /* Ajoutez cette ligne pour espacer les boîtes */
+}
+
+.panier-gauche,
+.panier-droite {
+  background-color: #252525;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 48%; /* Ajustez cette valeur pour modifier la largeur des boîtes */
+}
+
+.panier-droite {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#options-paiement,
+#info-contact {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#options-paiement h2,
+#info-contact h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #0071e3;
+}
+
+#info-contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#info-contact label {
+  font-size: 16px;
+}
+
+#info-contact input {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #252525;
+  color: #ffffff;
+}
+
+#info-contact button {
+  background-color: #0071e3;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#info-contact button:hover {
+  background-color: #005bb5;
+}
+
+/* Styles pour les boutons de paiement */
+.bouton-paiement {
+  background-color: #0071e3;
+  color: #fff;
+  border: none;
+  padding: 8px 16px; /* Réduisez la taille des boutons */
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px; /* Réduisez la taille de la police */
+  transition: background-color 0.3s ease, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-right: 10px; /* Ajoutez un espace entre les boutons */
+  text-decoration: none; /* Supprime le surlignage */
+}
+
+.bouton-paiement img {
+  width: 20px; /* Réduisez la taille des icônes */
+  height: 20px;
+}
+
+.conteneur-boutons-paiement {
+  display: flex;
+  justify-content: space-between; /* Alignez les boutons horizontalement */
+}
+
+/* Styles pour la fenêtre modale */
+.modale {
+  display: none; /* Masqué par défaut */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.contenu-modale {
+  background-color: #1e1e1e;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+.fermer {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.fermer:hover,
+.fermer:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Styles pour les champs de formulaire en parallèle */
+.groupe-formulaire {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.groupe-formulaire label {
+  width: 150px; /* Ajustez cette valeur selon vos besoins */
+  margin-right: 10px;
+  text-align: right;
+}
+
+.groupe-formulaire input {
+  flex: 1;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .conteneur-barre-navigation {
+    padding: 0 20px;
+  }
+
+  .liens-navigation {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #141414;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  .liens-navigation.actif {
+    display: flex;
+  }
+
+  .icones-sociales {
+    display: none;
+  }
+
+  .menu-hamburger {
+    display: flex;
+  }
+
+  .introduction,
+  .introduction-fin {
+    padding: 20px 20px !important;
+    margin-bottom: 20px;
+  }
+
+  .texte {
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .contenu-texte {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .paragraphe-texte {
+    order: 1;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .paragraphe-texte h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .paragraphe-texte p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+
+  .paragraphe-texte ul {
+    text-align: center;
+    padding-left: 0;
+    list-style-type: none;
+  }
+
+  .paragraphe-texte ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .image {
+    order: 2;
+    margin-top: 20px;
+  }
+
+  .image img {
+    position: static;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .contenu {
+    justify-content: center;
+    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .boite-service {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 20px;
+  }
+
+  .contenu-panier {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .panier-gauche,
+  .panier-droite {
+    width: 100%;
+  }
+}
